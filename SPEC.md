@@ -140,6 +140,26 @@ tsconfig.json    # TypeScript config
 - CORS configured for authorized origins
 - No sensitive data in logs
 
+## Important Notes
+
+- The user credentials (anon/Occultist9-Cruelness3-Unnamable1-Barterer4-Blatantly9) don't work - must register new account
+- Platform uses PHP sessions, no public API
+- Implementation requires browser automation to scrape HTML
+
+### Tested Credentials
+- Username: testuser123
+- Password: TestPass123
+- Email: testuser123@gmail.com
+
+### Platform Flow
+1. POST /login.php → Session cookie
+2. /dashboard.php → Lists created emails
+3. /add_email.php → Create new email (POST with alias + domain)
+4. /inbox.php?email={address} → View inbox
+
+### Test Email Created
+- testemail@e-mail.web.id
+
 ## Acceptance Criteria
 
 - [ ] User can login with e-mail.web.id credentials
