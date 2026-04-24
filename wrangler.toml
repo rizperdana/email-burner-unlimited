@@ -1,0 +1,10 @@
+name = "email-burner-unlimited"
+main = "src/index.ts"
+compatibility_date = "2024-04-24"
+
+[kv_namespaces]
+binding = "EMAIL_BURNER_KV"
+id = "email-burner-cache"
+
+[observability]
+enabled = true
